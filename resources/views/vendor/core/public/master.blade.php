@@ -299,7 +299,6 @@
 <div class="page-container">
     <div class="container">
         <div class="row">
-
             <!-- start of page content -->
             <div class="span8 page-content">
 
@@ -307,6 +306,7 @@
                 <article id="post-6" class="clearfix post-6 page type-page status-publish hentry">
                 </article>
 
+                @yield('content')
 
                 <div class="row separator">
                     <section class="span4 articles-list">
