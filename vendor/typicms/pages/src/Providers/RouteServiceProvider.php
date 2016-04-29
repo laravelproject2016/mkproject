@@ -6,6 +6,7 @@ use Config;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
 use Pages;
+use TypiCMS\Modules\Pages\Http\Controllers\PublicController;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -40,6 +41,7 @@ class RouteServiceProvider extends ServiceProvider
             ];
 
             if ($uri === '/') {
+
                 return Pages::getFirstBy('is_home', 1, $with);
             }
 
@@ -89,6 +91,7 @@ class RouteServiceProvider extends ServiceProvider
             /*
              * Front office routes
              */
+            $router->get('/wiki','PublicController@hi');
             if (config('typicms.main_locale_in_url')) {
                 if (config('typicms.lang_chooser')) {
                     $router->get('/', 'PublicController@langChooser');
