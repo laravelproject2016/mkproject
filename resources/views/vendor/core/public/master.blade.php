@@ -76,15 +76,15 @@
             padding: 0 !important;
         }
     </style>
-    {{  HTML::style(asset('css/font-awesome.minb2f9.css?ver=4.3.0')) }}
-    {{  HTML::style(asset('css/bootstrap5152.css?ver=1.0'))}}
-    {{  HTML::style(asset('css/responsive5152.css?ver=1.0'))}}
-    {{  HTML::style(asset('css/main5152.css?ver=1.0'))}}
-    {{  HTML::style(asset('css/custom5152.css?ver=1.0'))}}
-    {{  HTML::script(asset('js/jquery.easing.1.34e44.js?ver=1.3'))}}
-    {{  HTML::script(asset('js/jquery.liveSearchd5f7.js?ver=2.0'))}}
-    {{  HTML::script(asset('js/jquery.formd471.js?ver=3.18'))}}
-    {{  HTML::script(asset('js/jquery.validate.minfc6b.js?ver=1.10.0'))}}
+    <link href="{{ asset('css/font-awesome.minb2f9.css?ver=4.3.0') }}" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap5152.css?ver=1.0') }}" rel="stylesheet">
+    <link href="{{ asset('css/responsive5152.css?ver=1.0') }}" rel="stylesheet">
+    <link href="{{ asset('css/main5152.css?ver=1.0') }}" rel="stylesheet">
+    <link href="{{ asset('css/custom5152.css?ver=1.0') }}" rel="stylesheet">
+    <script type="text/javascript" src="{{ asset('js/jquery.easing.1.34e44.js?ver=1.3') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.liveSearchd5f7.js?ver=2.0') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.formd471.js?ver=3.18') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.validate.minfc6b.js?ver=1.10.0') }}"></script>
     <script type="text/javascript">
         var ceVC_JS = {
             "version": "2.1.10",
@@ -631,6 +631,6 @@
 <!-- End of Footer -->
 
 <a href="#top" id="scroll-top"></a>
-{{ Html::script(asset('js/custom5152.js?ver=1.0')) }}
+<script type="text/javascript" src="{{ asset('js/custom5152.js?ver=1.0') }}"></script>
 </body>
 </html>
